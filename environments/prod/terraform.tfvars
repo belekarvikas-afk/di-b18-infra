@@ -38,21 +38,3 @@ subnets = {
     address_prefixes     = ["10.0.3.0/24"]
   }
 }
-
-vms = {
-  frontend_1 = {
-    nic_name        = "frontend-vm-nic-1-dev"
-    location        = "centralindia"
-    rg_name         = "rg-chor-dev"
-    nic_subnet_name = "frontend-subnet-dev"
-    nic_vnet_name   = "vnet-chor-dev"
-    vm_name         = "frontend-vm-1-dev"
-    vm_size         = "Standard_B1s"
-    admin_username  = "devopsadmin"
-    admin-password  = "admin@223311"
-    image_publisher = "Canonical"
-    image_offer     = "0001-com-ubuntu-server-jammy"
-    image_sku       = "22_04-lts"
-    image_version   = "latest"
-  }
-}

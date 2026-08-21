@@ -17,9 +17,3 @@ module "subnets" {
 }
 
 
-module "virtual_machines" {
-  depends_on = [module.subnets]
-  source     = "../../modules/azurerm_virtual_machine"
-  vms        = var.vms
-}
-
